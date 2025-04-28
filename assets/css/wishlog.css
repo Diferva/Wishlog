@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.bg{
+  background-image: url('../img/index5.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-form-container {
+  background-color:transparent;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  margin-top: -80px;
+}
+/* Estilos del formulario */
+.login-form {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.card-container{
+  background-color:transparent;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  margin-top: -80px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .login-form {
+      padding: 20px;
+  }
+}
+
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label{
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background-color: #009acd;
+}
+
+p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 14px;
+  
+}
+
+text-m {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 18px;
+  
+}
+h1{
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+h2{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.text-gradient.text-info {
+  background-image: linear-gradient(310deg, #2152FF, #21D4FD);
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.col-form-label {
+  padding-top: calc(0.5rem + 1px);
+  padding-bottom: calc(0.5rem + 1px);
+  margin-bottom: 0;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.4rem;
+}
+
+.titulo-principal {
+  color: #21D4FD; /* Rosa neón para gamers */
+  text-shadow: 2px 2px 0px #00000033; /* Sombra para 3D */
+}
+
+ol {
+  list-style-position: inside;
+  list-style: none;
+  padding-left: 40px; 
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px; 
+}
+
+ol li {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  position: relative;
+  
+}
+
+ol li img {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  
+}
+
+ol li ul {
+  padding-right: 30px;
+  margin-top: 8px; 
+}
+
+ol li ul li a:link {
+  color: #2980b9;
+}
+
+ol li ul li a:visited {
+  color: #8e44ad;
+}
+
+ol li ul li a:hover {
+  color: #c0392b; 
+  text-decoration: underline; 
+}
+
+/* Contenedor principal mejorado */
+.tyc-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Card ampliada con mejor espaciado */
+.tyc-card {
+  width: 90%; /* Ocupa 90% del contenedor padre */
+  max-width: 1000px; /* Aumenté el máximo de 800px a 1000px */
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7;
+}
